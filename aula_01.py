@@ -29,8 +29,6 @@ class cachorro():
 
     
 cachorro1 = cachorro("Branco", False, 16.50)
-cachorro2 = cachorro("Preto", True, 17)        
-
 cachorro1.Latir(barulho="Au Au")
 cachorro1.Andar(anda= False)
 cachorro1.Comer(come= False)
@@ -40,6 +38,7 @@ cachorro1.get_cicatriz()
 
 print("")
 
+cachorro2 = cachorro("Preto", True, 17)
 cachorro2.Latir(barulho="Ruf Ruf")
 cachorro2.Andar(anda= True)
 cachorro2.Comer(come= True)
