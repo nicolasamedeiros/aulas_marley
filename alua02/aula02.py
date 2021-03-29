@@ -14,7 +14,7 @@ class Frase():
             return True
         else:
             return False
-    
+
     def Detectar_idioma(self):
         #vai conferir se é um str para não dar erro
         if (self.Detectar_txt() == True):
@@ -24,15 +24,23 @@ class Frase():
 
     def Traduzir(self):
         #Vai pegar a string e vai traduzir
-        if (self.Detectar_txt() == True):
+        if (self.Detectar_idioma() == "pt"):
+            print ("Esse texto não pode ser traduzido")
+        else:
             return self.MEU_TRADUTOR.translate(self.texto,src=self.Detectar_idioma(), dest="pt").text
+
+    def Quantidade(self):
+        if (type(self.texto) == str):
+            numletras = len(self.texto)
+            print(numletras)  
         else:
             pass
-            
-
-
-frase1 = Frase("This is a test")
-frase1.Detectar_txt()
+           
+        
+    
+frase1 = Frase("Good morning")
 print(frase1.Detectar_txt())
 print(frase1.Detectar_idioma())
 print(frase1.Traduzir())
+print(frase1.Quantidade())
+

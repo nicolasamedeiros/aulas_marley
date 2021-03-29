@@ -1,0 +1,23 @@
+Como mandar arquivos pro github
+
+1 - entra na pasta onde o arquivo tá
+
+2- git init
+
+3- git add --all
+
+4-git commit -m "add nome_da_atividade"
+
+5- git push origin main
+
+
+
+Como entar no ambiente virtual do virtalenv
+
+1- entrar na pasta onde o virtual está 
+
+2-cd virtual
+
+3- cd scripts 
+
+4- activate
